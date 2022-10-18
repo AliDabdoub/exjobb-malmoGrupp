@@ -1,10 +1,10 @@
-import "../../clothes/clothes.json"
 import React, { useEffect, useState } from "react";
+import "../clothes/clothes.json"
 
 function Closet() {
     return(
         <div>
-            <Clothing/>
+            <h1>closet</h1>
         </div>
     )
 }

@@ -1,2 +1,0 @@
-# exjobb-malmoGrupp
-

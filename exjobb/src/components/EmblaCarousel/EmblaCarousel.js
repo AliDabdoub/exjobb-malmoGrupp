@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { PrevButton, NextButton } from "./EmblaCarouselButtons";
 import useEmblaCarousel from "embla-carousel-react";
-import { mediaByIndex } from "../../clothes";
-import "../../styles/Embla.module.css";
+import { mediaByIndex } from "clothes";
+import "styles/Embla.module.css";
 
 const EmblaCarousel = ({ slides }) => {
   const [viewportRef, embla] = useEmblaCarousel({
