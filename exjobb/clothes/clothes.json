@@ -1,79 +1,79 @@
 {
-    "clothes":[
-            {
-                "id":1,
-                "typ":"top",
-                "url":"./top1.jfif"
-            },
-            {
-                "id":2,
-                "typ":"top",
-                "url":"./top2.jfif"
-            },
-            {
-                "id":3,
-                "typ":"top",
-                "url":"./top3.jfif"
-            },
-            {
-                "id":4,
-                "typ":"top",
-                "url":"./top4.jfif"
-            },
-            {
-                "id":5,
-                "typ":"top",
-                "url":"./top5.jfif"
-            },
-            {
-                "id":6,
-                "typ":"bottom",
-                "url":"./bottom1.jfif"
-            },
-            {
-                "id":7,
-                "typ":"bottom",
-                "url":"./bottom2.jfif"
-            },
-            {
-                "id":8,
-                "typ":"bottom",
-                "url":"./bottom3.jfif"
-            },
-            {
-                "id":9,
-                "typ":"bottom",
-                "url":"./bottom4.jfif"
-            },
-            {
-                "id":10,
-                "typ":"bottom",
-                "url":"./bottom5.jfif"
-            },
-            {
-                "id":11,
-                "typ":"shoe",
-                "url":"./shoe1.jfif"
-            },
-            {
-                "id":12,
-                "typ":"shoe",
-                "url":"./shoe2.jfif"
-            },
-            {
-                "id":13,
-                "typ":"shoe",
-                "url":"./shoe3.jfif"
-            },
-            {
-                "id":14,
-                "typ":"shoe",
-                "url":"./shoe4.jfif"
-            },
-            {
-                "id":15,
-                "typ":"shoe",
-                "url":"./shoe5.jfif"
-            }
+    "clothes": [
+        {
+            "id": 1,
+            "typ": "top",
+            "url": "./top1.jpg"
+        },
+        {
+            "id": 2,
+            "typ": "top",
+            "url": "./top2.jpg"
+        },
+        {
+            "id": 3,
+            "typ": "top",
+            "url": "./top3.jpg"
+        },
+        {
+            "id": 4,
+            "typ": "top",
+            "url": "./top4.jpg"
+        },
+        {
+            "id": 5,
+            "typ": "top",
+            "url": "./top5.jpg"
+        },
+        {
+            "id": 6,
+            "typ": "bottom",
+            "url": "./bottom1.jpg"
+        },
+        {
+            "id": 7,
+            "typ": "bottom",
+            "url": "./bottom2.jpg"
+        },
+        {
+            "id": 8,
+            "typ": "bottom",
+            "url": "./bottom3.jpg"
+        },
+        {
+            "id": 9,
+            "typ": "bottom",
+            "url": "./bottom4.jpg"
+        },
+        {
+            "id": 10,
+            "typ": "bottom",
+            "url": "./bottom5.jpg"
+        },
+        {
+            "id": 11,
+            "typ": "shoe",
+            "url": "./shoe1.jpg"
+        },
+        {
+            "id": 12,
+            "typ": "shoe",
+            "url": "./shoe2.jpg"
+        },
+        {
+            "id": 13,
+            "typ": "shoe",
+            "url": "./shoe3.jpg"
+        },
+        {
+            "id": 14,
+            "typ": "shoe",
+            "url": "./shoe4.jpg"
+        },
+        {
+            "id": 15,
+            "typ": "shoe",
+            "url": "./shoe5.jpg"
+        }
     ]
 }
