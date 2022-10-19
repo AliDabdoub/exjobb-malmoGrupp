@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { PrevButton, NextButton } from "./EmblaCarouselButtons";
 import useEmblaCarousel from "embla-carousel-react";
-import { mediaByTyp } from "db";
+import { mediaByTyp, mediaByTypShoe } from "db";
 import styles from "styles/Embla.module.scss";
 
 const EmblaCarousel = ({ slides }) => {
@@ -35,7 +35,7 @@ const EmblaCarousel = ({ slides }) => {
               <div className={styles.embla__slide__inner }>
                 <img
                   className={styles.embla__slide__img }
-                  src={mediaByTyp(typ)}
+                  src={mediaByTypShoe(typ)}
                   alt="Picture not available"
                 />
               </div>
