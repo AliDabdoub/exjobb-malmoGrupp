@@ -8,4 +8,7 @@ export const ShoeById =(id) => media.find(c => c.typ.shoe === shoe)*/
 
 export const mediaByTyp = typ => media[typ % media.length].url;
 
+// export const TypeBottoms = Object.keys(media)
+
+
 export default clothesJson
