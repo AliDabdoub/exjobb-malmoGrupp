@@ -1,3 +1,4 @@
+// import clothesJson from './sorted-clothes.json'
 import clothesJson from './sorted-clothes.json'
 export const top = clothesJson.clothes[0]
 export const bottom = clothesJson.clothes[1]
