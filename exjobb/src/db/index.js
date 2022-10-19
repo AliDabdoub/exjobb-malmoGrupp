@@ -1,6 +1,9 @@
 import clothesJson from './clothes.json'
 
-export const media = ['/top.jpg', '/', media3, media4, media5];
-export const mediaByIndex = index => media[index % media.length];
+export const media = clothesJson.clothes
+
+export const mediaById =(id) => media.find(c => c.id === id)
+
+export const mediaByIndex = index => media[index % media.length].url;
 
 export default clothesJson
