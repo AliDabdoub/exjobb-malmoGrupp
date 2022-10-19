@@ -2,11 +2,10 @@ import clothesJson from './clothes.json'
 
 export const media = clothesJson.clothes
 
-export const mediaById =(id) => media.find(c => c.id === id)
+/*export const TopsById =(id) => media.find(c => c.typ.top === top)
+export const BottomById =(id) => media.find(c => c.typ.bottom === bottom)
+export const ShoeById =(id) => media.find(c => c.typ.shoe === shoe)*/
 
-export const mediaByIndex = index => media[index % media.length].url;
-//export const TopsByIndex = index => media[index % media.length].url;
-//export const BottomsByIndex = index => media[index % media.length].url;
-//export const ShoesByIndex = index => media[index % media.length].url;
+export const mediaByTyp = typ => media[typ % media.length].url;
 
 export default clothesJson
