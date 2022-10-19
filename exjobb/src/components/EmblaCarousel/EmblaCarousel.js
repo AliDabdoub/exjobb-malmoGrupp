@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { PrevButton, NextButton } from "./EmblaCarouselButtons";
 import useEmblaCarousel from "embla-carousel-react";
-import { mediaByIndex } from "clothes";
-import "styles/Embla.module.css";
+import { mediaByIndex } from "db";
+import styles from "styles/Embla.module.scss";
 
 const EmblaCarousel = ({ slides }) => {
   const [viewportRef, embla] = useEmblaCarousel({
@@ -27,14 +27,14 @@ const EmblaCarousel = ({ slides }) => {
   }, [embla, onSelect]);
 
   return (
-    <div className="embla">
-      <div className="embla__viewport" ref={viewportRef}>
-        <div className="embla__container">
+    <div className={styles.embla}>
+      <div className={styles.embla__viewport} ref={viewportRef}>
+        <div className={styles.embla__container}>
           {slides.map((index) => (
-            <div className="embla__slide" key={index}>
-              <div className="embla__slide__inner">
+            <div className={styles.embla__slide } key={index}>
+              <div className={styles.embla__slide__inner }>
                 <img
-                  className="embla__slide__img"
+                  className={styles.embla__slide__img }
                   src={mediaByIndex(index)}
                   alt="A cool cat."
                 />
