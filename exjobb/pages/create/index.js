@@ -2,9 +2,9 @@ import React from "react";
 import EmblaCarousel from "components/EmblaCarousel/EmblaCarousel";
 // import db from "db";
 
-let demo = React.createElement( 
-    "h1", { style: { color: "green" } }, "Welcome to GeeksforGeeks"
-)
+// let demo = React.createElement( 
+//     "h1", { style: { color: "green" } }, "Welcome to GeeksforGeeks"
+// )
 
 
 
