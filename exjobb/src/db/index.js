@@ -1,4 +1,4 @@
-// import clothesJson from './clothes.json'
+// import clothesJson from './sorted-clothes.json'
 import clothesJson from './sorted-clothes.json'
 
 // export const media = clothesJson.clothes
