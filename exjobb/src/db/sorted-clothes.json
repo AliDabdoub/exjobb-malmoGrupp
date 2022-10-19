@@ -1,0 +1,136 @@
+{
+    "clothes" :
+                [
+                    [
+                        {
+                            "id": 1,
+                            "typ": "top",
+                            "url": "/jpg-clothes/top1.jpg"
+                        },
+                        {
+                            "id": 2,
+                            "typ": "top",
+                            "url": "/jpg-clothes/top2.jpg"
+                        },
+                        {
+                            "id": 3,
+                            "typ": "top",
+                            "url": "/jpg-clothes/top3.jpg"
+                        },
+                        {
+                            "id": 4,
+                            "typ": "top",
+                            "url": "top4.jpg"
+                        },
+                        {
+                            "id": 5,
+                            "typ": "top",
+                            "url": "/jpg-clothes/top5.jpg"
+                        },
+                        {
+                            "id": 6,
+                            "typ": "bottom",
+                            "url": "/jpg-clothes/bottom1.jpg"
+                        },
+                        {
+                            "id": 7,
+                            "typ": "bottom",
+                            "url": "/jpg-clothes/bottom2.jpg"
+                        },
+                        {
+                            "id": 8,
+                            "typ": "bottom",
+                            "url": "/jpg-clothes/bottom3.jpg"
+                        },
+                        {
+                            "id": 9,
+                            "typ": "bottom",
+                            "url": "/jpg-clothes/bottom4.jpg"
+                        },
+                        {
+                            "id": 10,
+                            "typ": "bottom",
+                            "url": "/jpg-clothes/bottom5.jpg"
+                        },
+                        {
+                            "id": 11,
+                            "typ": "shoe",
+                            "url": "/jpg-clothes/shoe1.jpg"
+                        },
+                        {
+                            "id": 12,
+                            "typ": "shoe",
+                            "url": "/jpg-clothes/shoe2.jpg"
+                        },
+                        {
+                            "id": 13,
+                            "typ": "shoe",
+                            "url": "/jpg-clothes/shoe3.jpg"
+                        },
+                        {
+                            "id": 14,
+                            "typ": "shoe",
+                            "url": "/jpg-clothes/shoe4.jpg"
+                        },
+                        {
+                            "id": 15,
+                            "typ": "shoe",
+                            "url": "/jpg-clothes/shoe5.jpg"
+                        }
+                    ],
+                    [
+                        {
+                            "id": 6,
+                            "typ": "bottom",
+                            "url": "/jpg-clothes/bottom1.jpg"
+                        },
+                        {
+                            "id": 7,
+                            "typ": "bottom",
+                            "url": "/jpg-clothes/bottom2.jpg"
+                        },
+                        {
+                            "id": 8,
+                            "typ": "bottom",
+                            "url": "/jpg-clothes/bottom3.jpg"
+                        },
+                        {
+                            "id": 9,
+                            "typ": "bottom",
+                            "url": "/jpg-clothes/bottom4.jpg"
+                        },
+                        {
+                            "id": 10,
+                            "typ": "bottom",
+                            "url": "/jpg-clothes/bottom5.jpg"
+                        }
+                    ],
+                    [
+                        {
+                            "id": 11,
+                            "typ": "shoe",
+                            "url": "/jpg-clothes/shoe1.jpg"
+                        },
+                        {
+                            "id": 12,
+                            "typ": "shoe",
+                            "url": "/jpg-clothes/shoe2.jpg"
+                        },
+                        {
+                            "id": 13,
+                            "typ": "shoe",
+                            "url": "/jpg-clothes/shoe3.jpg"
+                        },
+                        {
+                            "id": 14,
+                            "typ": "shoe",
+                            "url": "/jpg-clothes/shoe4.jpg"
+                        },
+                        {
+                            "id": 15,
+                            "typ": "shoe",
+                            "url": "/jpg-clothes/shoe5.jpg"
+                        }
+                    ]
+                ]
+}

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "../clothes/clothes.json"
+// import "../clothes/clothes.json"
+
+
 
 function Closet() {
     return(
