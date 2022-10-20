@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
-import clothingId from "./[clothingId]" 
+import Link from "next/link";
+
+// import clothingId from "./[clothingId]" 
+
 // import "../clothes/clothes.json"
 
 export const getStaticProps = async () => {
@@ -15,8 +18,7 @@ const Closet = ({ closet }) => {
 
     // const handleClick = event => {
     //     return(
-            
-        
+
     //     )
     // }
 
@@ -24,9 +26,9 @@ const Closet = ({ closet }) => {
         <div>
             {closet.clothes.map(c => (
                 <div key={closet.id}>
-                    <img src={c.url}
-                        onClick={handleClick}
-                    />
+                    <Link href={`/garment/${c.id}`}>
+                        <img src={c.url} />
+                    </Link>
                 </div>
             ))}
         </div>
