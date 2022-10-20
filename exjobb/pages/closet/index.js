@@ -13,12 +13,12 @@ export const getStaticProps = async () => {
 
 const Closet = ({ closet }) => {
 
-    const handleClick = event => {
-        return(
+    // const handleClick = event => {
+    //     return(
             
         
-        )
-    }
+    //     )
+    // }
 
     return (
         <div>

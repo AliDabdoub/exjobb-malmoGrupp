@@ -1,29 +1,6 @@
 import { useState, useEffect } from 'react';
 import {useRouter} from 'next/router'
 
-// const Clothing = ({props})=> {
-//     const { id } = props
-
-//     return(
-//         <div>
-//             <img
-//               src={``}
-//               />
-//         </div>
-//     )
-// }
-
-
-// const Clothing = ()=> {
-//   const router = useRouter()
-//   const clothingId = router.query.clothingId.id
-//   return (
-//     <div>
-//       <img src={`http://localhost:8000/clothes/${clothingId}`}/>
-//     </div>
-    
-//     )
-//   } 
 
 const Clothing = ({ cloth = {} })=> {
   const router = useRouter()
