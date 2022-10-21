@@ -4,21 +4,7 @@ import { mediaByTop, mediaByBottom, mediaByShoe } from "db";
 import emblaCarouselReact from "embla-carousel-react";
 
 const CreatePage = (props) => {
-  // const [saved, UseSaved] = useState(false)
-  
-  // // const {someProp} = props
-  // const embla = emblaCarouselReact.selectedScrollSnap()
-   // console.log(emblaCarouselReact.selectedScrollSnap)
-  
-  // const handleClick =() => {
-  //   UseSaved((true) => 
-  // }
-  // React.useEffect(() => {
-  //  localStorage.setItem('saved-set', JSON.stringify({ scrollSnaplist : 'id'}))
-
-  //   // const lalaObject = JSON.parse(localStorage.get('saved-set'))
-  // },[])
-
+ 
   return (
     <main>
       <div>
