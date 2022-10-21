@@ -4,7 +4,7 @@ import { mediaByTop, mediaByBottom, mediaByShoe } from "db";
 import { PrevButton, NextButton } from "./EmblaCarouselButtons";
 import styles from "styles/Embla.module.scss";
 
-const EmblaCarousel = ({ slides = [] }) => {
+const EmblaCarousel = ({ slides = [], onSelect: onSelectProp }) => {
   const [viewportRef, embla] = useEmblaCarousel({
     loop: true,
     skipSnaps: false
@@ -17,6 +17,10 @@ const EmblaCarousel = ({ slides = [] }) => {
 
   const onSelect = useCallback(() => {
     if (!embla) return;
+    if (onSelectProp) {
+      onSelectProp(slides[embla.selectedScrollSnap()])
+    }
+
     setPrevBtnEnabled(embla.canScrollPrev());
     setNextBtnEnabled(embla.canScrollNext());
   }, [embla]);
