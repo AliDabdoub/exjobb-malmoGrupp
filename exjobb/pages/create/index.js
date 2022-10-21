@@ -7,8 +7,8 @@ const CreatePage = (props) => {
   // const [saved, UseSaved] = useState(false)
   
   // // const {someProp} = props
-  const embla = emblaCarouselReact.selectedScrollSnap()
-    console.log(emblaCarouselReact.selectedScrollSnap)
+  // const embla = emblaCarouselReact.selectedScrollSnap()
+   // console.log(emblaCarouselReact.selectedScrollSnap)
   
   // const handleClick =() => {
   //   UseSaved((true) => 
