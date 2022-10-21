@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-
+import styles from "styles/closet.module.scss";
 // import clothingId from "./[clothingId]" 
 
 // import "../clothes/clothes.json"
@@ -23,14 +23,16 @@ const Closet = ({ closet }) => {
     // }
 
     return (
-        <div>
-            {closet.clothes.map(c => (
-                <div key={closet.id}>
-                    <Link href={`/garment/${c.id}`}>
-                        <img src={c.url} />
-                    </Link>
-                </div>
-            ))}
+        <div className={styles.closet__container}>
+            <div className={styles.closet}>
+                {closet.clothes.map(c => (
+                    <div className={styles.closet__image} key={closet.id}>
+                        <Link href={`/garment/${c.id}`}>
+                            <img src={c.url} />
+                        </Link>
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }
