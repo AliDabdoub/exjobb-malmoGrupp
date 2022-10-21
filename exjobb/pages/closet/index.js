@@ -16,12 +16,6 @@ export const getStaticProps = async () => {
 
 const Closet = ({ closet }) => {
 
-    // const handleClick = event => {
-    //     return(
-
-    //     )
-    // }
-
     return (
         <div className={styles.closet__container}>
             <div className={styles.closet}>
