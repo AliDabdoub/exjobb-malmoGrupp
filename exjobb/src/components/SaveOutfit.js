@@ -10,8 +10,6 @@ saveButton.on('click', function() {
 
 })
 
-
-
   useEffect(() => {
     if (!embla) return;
     saveButton.on("click", onClick);
