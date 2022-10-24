@@ -3,6 +3,7 @@ $accent-light: #e1ddcf;
 $accent-dark: #2a324b;
 $dark-color: black;
 
+
 .linkUpper {
   display: flex;
   justify-content: left;
@@ -13,10 +14,11 @@ $dark-color: black;
 }
 .linkBelow {
   display: flex;
-  justify-content: end;
+  justify-content: left;
 }
 .container {
-  padding: 0 2rem;
+  padding: 40px;
+  padding-left: 40px;
 }
 
 .main {

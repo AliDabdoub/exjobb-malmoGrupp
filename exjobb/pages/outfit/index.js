@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react'
 import { getMediaById } from "db";
 import { STORAGE_KEY } from "constants";
+import Navbar from '../../src/components/Navbar'
 
 
 function Outfit({ Component, pageProps }) {
@@ -23,14 +24,18 @@ function removeItem(idx) {
   
   return (
     <div>
-      <h1>Outfit page</h1>
+    <Navbar />
+    
+      <h1>Here is your outfits</h1>
 
       {outfits.map((obj, i) => {
+      
         const top = getMediaById(obj.top)
         const bottom = getMediaById(obj.bottom)
         const shoe = getMediaById(obj.shoe)
         return (
           <div key={i} style={{border: '2px dotted lime', maxWidth: 300, margin: '15px auto'}}>
+            
             <img src={top?.url} />
             <img src={bottom?.url} />
             <img src={shoe?.url} />
