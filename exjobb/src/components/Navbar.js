@@ -4,16 +4,24 @@ import Link from "next/link";
 
 const Navbar = ()=> {
     return(
-        <nav className={styles.main__nav}>
-            <ul>
-                <Link href='/'><a><li>Home</li></a></Link>
-                <Link href='/closet'><a><li>Closet</li></a></Link>
-                <Link href='/create'><a><li>Create</li></a></Link>
-                <Link href='/outfit'><a><li>Outfit</li></a></Link>
+        <section className={styles.top__nav}>
+            <div>
+                Logo here
+            </div>
+
+            <input id={styles.menu__toggle} type="checkbox" />
+            <label className={styles.menu__button__container} htmlFor={styles.menu__toggle}>
+                <div className={styles.menu__button}></div>
+            </label>
+
+            <ul className={styles.menu}>
+                <Link href='/'><li>Home</li></Link>
+                <Link href='/closet'><li>Closet</li></Link>
+                <Link href='/create'><li>Create</li></Link>
+                <Link href='/outfit'><li>Outfit</li></Link>
             </ul>
-        </nav>
+        </section>
     )
 } 
 
 export default Navbar
-//comment 10-24-2022
