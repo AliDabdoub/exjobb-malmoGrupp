@@ -2,8 +2,19 @@ import {useEffect, useState} from 'react'
 import { getMediaById } from "db";
 import { STORAGE_KEY } from "constants";
 
+
 function Outfit({ Component, pageProps }) {
   const [outfits, setOutfits] = useState([])
+
+function removeItem(idx) {
+  return () => {
+    const list = [...outfits]
+    list.splice(idx, 1)
+
+    setOutfits(list)
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(list))
+  }
+}
 
   useEffect(() => {
     const savedOutfitList = JSON.parse(localStorage.getItem(STORAGE_KEY))
@@ -23,7 +34,7 @@ function Outfit({ Component, pageProps }) {
             <img src={top?.url} />
             <img src={bottom?.url} />
             <img src={shoe?.url} />
-            <button type="button" onClick={i = localStorage.removeItem(STORAGE_KEY)}>delete</button>
+            <button type="button" onClick={removeItem(i)}>delete</button>
           </div>
       )})}
     </div>
