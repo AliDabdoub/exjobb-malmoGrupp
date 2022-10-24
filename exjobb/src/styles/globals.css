@@ -28,3 +28,7 @@ a {
 img {
   max-width: 100%;
 }
+.savebutton {
+  background-color: #e1ddcf;
+  color:#2a324b
+}

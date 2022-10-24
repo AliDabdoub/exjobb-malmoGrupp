@@ -34,12 +34,14 @@ function removeItem(idx) {
         const bottom = getMediaById(obj.bottom)
         const shoe = getMediaById(obj.shoe)
         return (
-          <div key={i} style={{border: '2px dotted lime', maxWidth: 300, margin: '15px auto'}}>
+          <div key={i} style={{border: '2px dashed #2a324b', maxWidth: 300, margin: '15px auto'}}>
             
             <img src={top?.url} />
             <img src={bottom?.url} />
             <img src={shoe?.url} />
-            <button type="button" onClick={removeItem(i)}>delete</button>
+            <button 
+            type="button"
+            onClick={removeItem(i)}>delete</button>
           </div>
       )})}
     </div>
