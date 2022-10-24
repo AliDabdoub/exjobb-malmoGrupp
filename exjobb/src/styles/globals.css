@@ -5,15 +5,18 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: #f8f8ed;
-}
-.span {
-  color: #2a324b
+  margin: 0;
+  height: 100%;
 }
 
 a {
   color: #2a324b;
   text-decoration: none;
+}
+
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
 }
 
 *, *:before, *:after {
