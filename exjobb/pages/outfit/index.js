@@ -40,7 +40,7 @@ function removeItem(idx) {
               <img src={top?.url} />
               <img src={bottom?.url} />
               <img src={shoe?.url} />
-              <button class="delete-btn" onClick={removeItem(i)}>delete</button>
+              <button className="delete-btn" onClick={removeItem(i)}>delete</button>
             </div>
           </div>
       )})}
