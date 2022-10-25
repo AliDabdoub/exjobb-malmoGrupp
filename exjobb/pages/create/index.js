@@ -3,6 +3,7 @@ import EmblaCarousel from "components/EmblaCarousel/EmblaCarousel";
 import { mediaByTop, mediaByBottom, mediaByShoe } from "db";
 import emblaCarouselReact from "embla-carousel-react";
 import { STORAGE_KEY } from "constants";
+import styles from "styles/Embla.module.scss"
 
 
 const CreatePage = (props) => {
