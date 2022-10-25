@@ -1,6 +1,3 @@
-
-
-
 const ImageClick = ()=> {
     
     const handleClick = () => {
