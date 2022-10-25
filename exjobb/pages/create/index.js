@@ -3,6 +3,7 @@ import EmblaCarousel from "components/EmblaCarousel/EmblaCarousel";
 import { mediaByTop, mediaByBottom, mediaByShoe } from "db";
 import emblaCarouselReact from "embla-carousel-react";
 import { STORAGE_KEY } from "constants";
+import Navbar from '../../src/components/Navbar'
 
 
 const CreatePage = (props) => {
@@ -29,6 +30,7 @@ const CreatePage = (props) => {
   return (
     <main>
       <div>
+      <Navbar />
         <EmblaCarousel slides={mediaByTop} onSelect={handleSelect('top')} />
         <EmblaCarousel slides={mediaByBottom} onSelect={handleSelect('bottom')} />
         <EmblaCarousel slides={mediaByShoe} onSelect={handleSelect('shoe')} />
