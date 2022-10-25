@@ -6,7 +6,6 @@ const CreatePage = (props) => {
 
     return (
         <div>
-            <p>{garment.id}</p>
             <img src={garment.url} />
         </div>
     )
