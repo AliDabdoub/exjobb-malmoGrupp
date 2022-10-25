@@ -41,3 +41,8 @@ img {
   border-radius: 5px;
   border: 0;
 }
+
+.delete-btn {
+  background-color: #e1ddcf;
+  color:#2a324b
+}

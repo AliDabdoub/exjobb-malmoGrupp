@@ -2,7 +2,7 @@ import {useEffect, useState} from 'react'
 import { getMediaById } from "db";
 import { STORAGE_KEY } from "constants";
 import Navbar from '../../src/components/Navbar'
-import 'styles/outfit.module.scss'
+import styles from 'styles/outfit.module.scss'
 
 
 function Outfit({ Component, pageProps }) {
