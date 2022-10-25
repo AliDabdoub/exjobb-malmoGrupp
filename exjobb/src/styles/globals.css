@@ -28,12 +28,33 @@ a {
 img {
   max-width: 100%;
 }
-.savebutton {
+.save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.saveButton {
+  width: 100px;
+  height: 30px;
   background-color: #e1ddcf;
-  color:#2a324b
+  color:#2a324b;
+  border-radius: 5px;
+  border: 0;
 }
 
+.savebutton:active {
+  height: 100%;
+  width: 100%;
+  padding: 2% 5%;
+  color: #e1ddcf;
+  background-color:#2a324b;
+  border-style: none;
+}
+
+
 .delete-btn {
-  background-color: #e1ddcf;
-  color:#2a324b
+  padding: 2% 5%;
+  color: #e1ddcf;
+  background-color:#2a324b;
+  border-style: none;
 }
