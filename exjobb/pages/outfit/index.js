@@ -7,6 +7,7 @@ import styles from 'styles/outfit.module.scss'
 
 function Outfit({ Component, pageProps }) {
   const [outfits, setOutfits] = useState([])
+  
 
 function removeItem(idx) {
   return () => {
@@ -27,7 +28,7 @@ function removeItem(idx) {
     <div>
     <Navbar />
     
-      <h1>Here is your outfits</h1>
+      <h1>Outfit page</h1>
 
       {outfits.map((obj, i) => {
       
