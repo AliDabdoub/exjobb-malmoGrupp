@@ -8,8 +8,6 @@ const Clothing = ({ cloth = {} })=> {
 
   return (
     <div>
-      <h1>{clothingId}</h1>
-
       <img src={cloth.url} />
     </div>
   )

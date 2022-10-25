@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react'
 import { getMediaById } from "db";
 import { STORAGE_KEY } from "constants";
 import Navbar from '../../src/components/Navbar'
+import 'styles/outfit.module.scss'
 
 
 function Outfit({ Component, pageProps }) {
@@ -34,14 +35,13 @@ function removeItem(idx) {
         const bottom = getMediaById(obj.bottom)
         const shoe = getMediaById(obj.shoe)
         return (
-          <div key={i} style={{border: '2px dashed #2a324b', maxWidth: 300, margin: '15px auto'}}>
-            
-            <img src={top?.url} />
-            <img src={bottom?.url} />
-            <img src={shoe?.url} />
-            <button 
-            type="button"
-            onClick={removeItem(i)}>delete</button>
+          <div class="outfits-grid">
+            <div class="outfits" key={i} style={{border: '2px dotted lime', maxWidth: 300, margin: '15px auto'}}>
+              <img src={top?.url} />
+              <img src={bottom?.url} />
+              <img src={shoe?.url} />
+              <button class="delete-btn" onClick={removeItem(i)}>delete</button>
+            </div>
           </div>
       )})}
     </div>
