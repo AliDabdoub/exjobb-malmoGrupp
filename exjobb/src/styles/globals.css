@@ -42,7 +42,19 @@ img {
   border: 0;
 }
 
+.savebutton:active {
+  height: 100%;
+  width: 100%;
+  padding: 2% 5%;
+  color: #e1ddcf;
+  background-color:#2a324b;
+  border-style: none;
+}
+
+
 .delete-btn {
-  background-color: #e1ddcf;
-  color:#2a324b
+  padding: 2% 5%;
+  color: #e1ddcf;
+  background-color:#2a324b;
+  border-style: none;
 }

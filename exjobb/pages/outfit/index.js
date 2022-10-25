@@ -1,8 +1,8 @@
 import {useEffect, useState} from 'react'
 import { getMediaById } from "db";
 import { STORAGE_KEY } from "constants";
+import styles from "../../src/styles/outfit.module.scss"
 import Navbar from '../../src/components/Navbar'
-import styles from 'styles/outfit.module.scss'
 
 
 function Outfit({ Component, pageProps }) {
@@ -26,25 +26,30 @@ function removeItem(idx) {
   
   return (
     <div>
-    <Navbar />
+      <Navbar />
     
       <h1>Outfit page</h1>
 
-      {outfits.map((obj, i) => {
-      
-        const top = getMediaById(obj.top)
-        const bottom = getMediaById(obj.bottom)
-        const shoe = getMediaById(obj.shoe)
-        return (
-          <div class="outfits-grid">
-            <div class="outfits" key={i} style={{border: '2px dotted lime', maxWidth: 300, margin: '15px auto'}}>
-              <img src={top?.url} />
-              <img src={bottom?.url} />
-              <img src={shoe?.url} />
-              <button class="delete-btn" onClick={removeItem(i)}>delete</button>
+      <div className={styles.outfits}>
+        {outfits ? outfits.map((obj, i) => {
+          const top = getMediaById(obj.top)
+          const bottom = getMediaById(obj.bottom)
+          const shoe = getMediaById(obj.shoe)
+          return (
+            <div className={styles.outfit} key={i}>
+                <div className={styles.outfitParts} key={i} >
+                  <img src={top?.url} />
+                  <img src={bottom?.url} />
+                  <img src={shoe?.url} />
+                </div>
+
+                <button className={styles.deleteBtn} onClick={removeItem(i)}>Remove</button>
             </div>
-          </div>
-      )})}
+        )}) : <div>
+          No outfits saved
+          </div>}
+      </div>
+
     </div>
   )
 }
