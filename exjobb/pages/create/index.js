@@ -36,7 +36,7 @@ const CreatePage = (props) => {
         <EmblaCarousel slides={mediaByBottom} onSelect={handleSelect('bottom')} />
         <EmblaCarousel slides={mediaByShoe} onSelect={handleSelect('shoe')} />
 
-        <button className="savebutton saveit" onClick={handleSave}>Save this outfit!</button>
+       <div className="save"> <button type="button" className="saveButton" onClick={handleSave}>Save this outfit!</button></div>
       </div>
     </main>
   )
