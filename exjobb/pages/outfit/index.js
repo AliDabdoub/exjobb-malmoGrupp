@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react'
+import { useEffect, useState } from 'react'
 import { getMediaById } from "db";
 import { STORAGE_KEY } from "constants";
 import styles from "../../src/styles/outfit.module.scss"
@@ -8,26 +8,26 @@ import Navbar from '../../src/components/Navbar'
 function Outfit({ Component, pageProps }) {
   const [outfits = [], setOutfits] = useState([])
 
-function removeItem(idx) {
-  return () => {
-    const list = [...outfits]
-    list.splice(idx, 1)
+  function removeItem(idx) {
+    return () => {
+      const list = [...outfits]
+      list.splice(idx, 1)
 
-    setOutfits(list)
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(list))
+      setOutfits(list)
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(list))
+    }
   }
-}
 
   useEffect(() => {
     const savedOutfitList = JSON.parse(localStorage.getItem(STORAGE_KEY))
     setOutfits(savedOutfitList)
-  },[])
-  
+  }, [])
+
   return (
     <div>
       <Navbar />
-    
-      <h1>Here is your outfits</h1>
+
+      <h1>Here are your outfits</h1>
 
       <div className={styles.outfits}>
         {outfits ? outfits.map((obj, i) => {
@@ -36,17 +36,18 @@ function removeItem(idx) {
           const shoe = getMediaById(obj.shoe)
           return (
             <div className={styles.outfit} key={i}>
-                <div className={styles.outfitParts} key={i} >
-                  <img src={top?.url} />
-                  <img src={bottom?.url} />
-                  <img src={shoe?.url} />
-                </div>
+              <div className={styles.outfitParts} key={i} >
+                <img src={top?.url} />
+                <img src={bottom?.url} />
+                <img src={shoe?.url} />
+              </div>
 
-                <button className={styles.deleteBtn} onClick={removeItem(i)}>Remove</button>
+              <button className={styles.deleteBtn} onClick={removeItem(i)}>Remove</button>
             </div>
-        )}) : <div>
+          )
+        }) : <div>
           No outfits saved
-          </div>}
+        </div>}
       </div>
 
     </div>
