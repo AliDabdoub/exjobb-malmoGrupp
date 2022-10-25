@@ -2,9 +2,6 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "styles/closet.module.scss";
 import Navbar from '../../src/components/Navbar'
-// import clothingId from "./[clothingId]" 
-
-// import "../clothes/clothes.json"
 
 export const getStaticProps = async () => {
     const response = await fetch('http://localhost:3000/api/closet')
