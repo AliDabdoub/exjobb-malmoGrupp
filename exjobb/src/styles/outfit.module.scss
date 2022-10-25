@@ -1,0 +1,11 @@
+$base-color: #f8f8ed;
+$accent-light: #e1ddcf;
+$accent-dark: #2a324b;
+$dark-color: black;
+
+.outfits-grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(50% 50%);
+}
