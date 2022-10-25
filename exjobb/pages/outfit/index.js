@@ -1,8 +1,8 @@
-import styles from "styles/outfit.module.scss";
 import {useEffect, useState} from 'react'
 import { getMediaById } from "db";
 import { STORAGE_KEY } from "constants";
 import Navbar from '../../src/components/Navbar'
+import 'styles/outfit.module.scss'
 
 
 function Outfit({ Component, pageProps }) {
@@ -40,7 +40,7 @@ function removeItem(idx) {
               <img src={top?.url} />
               <img src={bottom?.url} />
               <img src={shoe?.url} />
-              <button type="button" onClick={removeItem(i)}>delete</button>
+              <button class="delete-btn" onClick={removeItem(i)}>delete</button>
             </div>
           </div>
       )})}
