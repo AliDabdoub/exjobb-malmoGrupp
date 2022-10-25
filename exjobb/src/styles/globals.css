@@ -28,7 +28,16 @@ a {
 img {
   max-width: 100%;
 }
-.savebutton {
+.save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.saveButton {
+  width: 100px;
+  height: 30px;
   background-color: #e1ddcf;
-  color:#2a324b
+  color:#2a324b;
+  border-radius: 5px;
+  border: 0;
 }
