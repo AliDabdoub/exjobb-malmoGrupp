@@ -7,18 +7,15 @@ $dark-color: black;
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-columns: repeat(50% 50%);
+    grid-template-columns: repeat(100%);
+    grid-template-rows: minmax(7rem, auto);
 }
 
-.delete-btn {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-
+.outfits {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(33%, 33%, 33%);
+    grid-template-columns: minmax(7rem, auto);
+}
 
