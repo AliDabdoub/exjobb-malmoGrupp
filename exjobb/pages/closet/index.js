@@ -21,7 +21,7 @@ const Closet = ({ closet }) => {
                 <button className={styles.button} onClick={()=>{setClothing('')}}>All</button>
                 <button className={styles.button} onClick={()=>{setClothing('top')}}>Top</button>
                 <button className={styles.button} onClick={()=>{setClothing('bottom')}}>Bottom</button>
-                <button className={styles.button} onClick={()=>{setClothing('shoe')}}>Shoe</button>
+                <button className={styles.button} onClick={()=>{setClothing('shoe')}}>Shoes</button>
             </div>
             <div className={styles.closet}>
                 {closet.clothes.filter((f) => {return f.typ.includes(clothing)}).map(c => (
