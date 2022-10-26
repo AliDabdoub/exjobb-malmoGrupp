@@ -13,10 +13,26 @@ export const getStaticProps = async () => {
 }
 
 const Closet = ({ closet }) => {
-
+    const [clothing, setClothing] = useState('');
     return (
         <div className={styles.closet__container}>
             <Navbar />
+            <div className={styles.under__navbar}>
+                <button className={styles.button} onClick={()=>{setClothing('')}}>All</button>
+                <button className={styles.button} onClick={()=>{setClothing('top')}}>Top</button>
+                <button className={styles.button} onClick={()=>{setClothing('bottom')}}>Bottom</button>
+                <button className={styles.button} onClick={()=>{setClothing('shoe')}}>Shoe</button>
+            </div>
+            <div className={styles.closet}>
+                {closet.clothes.filter((f) => {return f.typ.includes(clothing)}).map(c => (
+                    <div className={styles.closet__image} key={closet.id}>
+                        <Link href={`/garment/${c.id}`}>
+                            <img src={c.url} />
+                        </Link>
+                    </div>
+                ))}
+            </div>
+            {/*
             <div className={styles.closet}>
                 {closet.clothes.map(c => (
                     <div className={styles.closet__image} key={closet.id}>
@@ -26,6 +42,7 @@ const Closet = ({ closet }) => {
                     </div>
                 ))}
             </div>
+                */}
         </div>
     )
 }
