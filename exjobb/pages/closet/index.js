@@ -19,9 +19,9 @@ const Closet = ({ closet }) => {
             <Navbar />
             <div className={styles.under__navbar}>
                 <button className={styles.button} onClick={()=>{setClothing('')}}>All</button>
-                <button className={styles.button} onClick={()=>{setClothing('top')}}>Top</button>
-                <button className={styles.button} onClick={()=>{setClothing('bottom')}}>Bottom</button>
-                <button className={styles.button} onClick={()=>{setClothing('shoe')}}>Shoes</button>
+                <button className={styles.button} onClick={()=>{setClothing('Top')}}>Top</button>
+                <button className={styles.button} onClick={()=>{setClothing('Bottom')}}>Bottom</button>
+                <button className={styles.button} onClick={()=>{setClothing('Shoes')}}>Shoes</button>
             </div>
             <div className={styles.closet}>
                 {closet.clothes.filter((f) => {return f.typ.includes(clothing)}).map(c => (
