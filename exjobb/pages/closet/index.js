@@ -13,7 +13,7 @@ export const getStaticProps = async () => {
 }
 
 const Closet = ({ closet }) => {
-    
+
     return (
         <div className={styles.closet__container}>
             <Navbar />
