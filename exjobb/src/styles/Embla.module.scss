@@ -5,7 +5,7 @@ $dark-color: black;
 
 .embla {
   position: relative;
-  background-color: #f8f8ed;
+  background-color: $base-color;
   padding: 20px;
   max-width: 670px;
   margin-left: auto;
@@ -76,7 +76,7 @@ $dark-color: black;
   height: 30px;
   justify-content: center;
   align-items: center;
-  fill: #2a324b;
+  fill: $accent-dark;
   padding: 0;
 
   &:disabled {
