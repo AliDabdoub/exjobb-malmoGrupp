@@ -28,6 +28,21 @@ const CreatePage = (props) => {
 
   console.log('DATA', data)
 
+  
+    const initialText = 'Save this outfit';
+    const [buttonText, setButtonText] = useState(initialText);
+  
+    function handleClick() {
+      setButtonText('Your outfit has been saved');
+  
+      setTimeout(() => {
+        setButtonText(initialText);
+      }, 3000);
+    }
+ 
+
+  
+
   return (
     <main>
       <div>
@@ -35,8 +50,10 @@ const CreatePage = (props) => {
         <EmblaCarousel slides={mediaByTop} onSelect={handleSelect('top')} />
         <EmblaCarousel slides={mediaByBottom} onSelect={handleSelect('bottom')} />
         <EmblaCarousel slides={mediaByShoe} onSelect={handleSelect('shoe')} />
-
-       <div className="save"> <button type="button" className="saveButton" onClick={handleSave}>Save this outfit!</button></div>
+        <button type="button" className="saveButton" onClick={() => {
+          handleSave();
+          handleClick();
+        }}>{buttonText}</button>
       </div>
     </main>
   )
@@ -49,6 +66,10 @@ export async function getServerSideProps({ params }) {
     }
   }
 }
+
+  
+
+
 
 
 export default CreatePage
