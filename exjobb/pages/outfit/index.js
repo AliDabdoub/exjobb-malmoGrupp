@@ -6,7 +6,8 @@ import Navbar from '../../src/components/Navbar'
 
 
 function Outfit({ Component, pageProps }) {
-  const [outfits = [], setOutfits] = useState([])
+  const [outfits, setOutfits] = useState([])
+  
 
   function removeItem(idx) {
     return () => {
