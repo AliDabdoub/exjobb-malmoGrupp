@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useState } from "react";
 import emblaCarousel from "./EmblaCarousel/EmblaCarousel";
 
 const onClick =  useCallback(() => {
@@ -9,8 +9,6 @@ const onClick =  useCallback(() => {
 saveButton.on('click', function() {
 
 })
-
-
 
   useEffect(() => {
     if (!embla) return;

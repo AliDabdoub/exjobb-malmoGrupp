@@ -43,12 +43,6 @@ img {
   transition: width height 2s;
 }
 
-.saveButton:hover {
-  width: 200px;
-  height: 60px;
-}
-
-
 .delete-btn {
   padding: 2% 5%;
   color: #e1ddcf;
