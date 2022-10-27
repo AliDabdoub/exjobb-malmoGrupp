@@ -68,9 +68,9 @@ $dark-color: black;
 .button{
     background: transparent;
     border: none;
-    margin: 15px 10px 15px 10px;
+    margin: 15px 10px 15px 15px;
     display: block;
-    font-size: 20px;
+    font-size: 13px;
     outline: none;
     position: relative;
     transition: 0.3s;
@@ -78,32 +78,25 @@ $dark-color: black;
 }
 .button:before{
     content: '';
-    border-bottom: 3px solid $accent-dark;
-    padding: 10px 10px;
+    border-bottom: 3px solid $base-color;
+    padding: 1px;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
     width: 0;
-    transition: 0.5s;
+    transition: 0.4s;
 } 
 
 .button:hover:before{
     width: 100%;
-    padding: 0; // the other part of the trick
-}
-
-.button:after{
-    border-bottom: 30px solid $accent-dark;
+    padding: 0.3px; // the other part of the trick
+    border-bottom: 3px solid $accent-dark;
     background: $accent-dark;
     color: $base-color;
     transition: none;
-    
-    button{
-        font-weight: bolder !important;
-        font-weight: bolder;
-        font-size: 3rem;
-    }
 }
+
+
 
