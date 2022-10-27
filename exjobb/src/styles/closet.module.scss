@@ -53,3 +53,58 @@ $dark-color: black;
         padding: 0 0 20px 0;
     }
 }
+
+.under__navbar{
+    display: flex;
+    // flex-shrink: 2;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+.button{
+    background: transparent;
+    border: none;
+    margin: 15px 10px 15px 10px;
+    display: block;
+    font-size: 20px;
+    outline: none;
+    position: relative;
+    transition: 0.3s;
+    padding: 10px; // the trick
+}
+.button:before{
+    content: '';
+    border-bottom: 2px solid $accent-dark;
+    padding: 10px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    transition: 0.3s;
+}   
+.button:hover:before{
+    width: 100%;
+    padding: 0; // the other part of the trick
+}
+
+// click effect
+// .button:active{
+//     border-bottom: 20px solid $accent-dark;
+//     background: $accent-dark;
+//     color: $base-color;
+//     transition: none;
+// }
+
+.button:after{
+    border-bottom: 20px solid $accent-dark;
+    background: $accent-dark;
+    color: $base-color;
+    transition: none;
+}
+
