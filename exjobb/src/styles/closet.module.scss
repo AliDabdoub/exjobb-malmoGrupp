@@ -32,8 +32,9 @@ $dark-color: black;
         padding: 25px;
         display: grid;
         grid-template-columns:1fr; 
-        grid-template-rows: repeat(5, 1.25fr 1.25fr 1.25fr 1.25fr); 
+        grid-template-rows: repeat(5, 1fr); 
         grid-template-areas: 
+            "closet__image "
             "closet__image "
             "closet__image "
             "closet__image "
