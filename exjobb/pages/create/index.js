@@ -33,7 +33,7 @@ const CreatePage = (props) => {
     const [buttonText, setButtonText] = useState(initialText);
   
     function handleClick() {
-      setButtonText('Your outfit has been saved');
+      setButtonText('This outfit has been saved');
   
       setTimeout(() => {
         setButtonText(initialText);
@@ -50,10 +50,11 @@ const CreatePage = (props) => {
         <EmblaCarousel slides={mediaByTop} onSelect={handleSelect('top')} />
         <EmblaCarousel slides={mediaByBottom} onSelect={handleSelect('bottom')} />
         <EmblaCarousel slides={mediaByShoe} onSelect={handleSelect('shoe')} />
-        <button type="button" className="saveButton" onClick={() => {
+        <div className="save"><button type="button" className="saveButton" onClick={() => {
           handleSave();
           handleClick();
         }}>{buttonText}</button>
+        </div>
       </div>
     </main>
   )
