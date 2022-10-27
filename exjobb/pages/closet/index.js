@@ -18,7 +18,7 @@ const Closet = ({ closet }) => {
         <div className={styles.closet__container}>
             <Navbar />
             <div className={styles.under__navbar}>
-                <button className={styles.button} onClick={()=>{setClothing('')}}> All </button>
+                <button className={`${styles.button} ${styles.all}`} onClick={()=>{setClothing('')}}>All </button>
                 <button className={styles.button} onClick={()=>{setClothing('top')}}>Top</button>
                 <button className={styles.button} onClick={()=>{setClothing('bottom')}}>Bottom</button>
                 <button className={styles.button} onClick={()=>{setClothing('shoe')}}>Shoes</button>

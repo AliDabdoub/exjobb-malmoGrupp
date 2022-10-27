@@ -1,3 +1,23 @@
-.garment img{
-    padding:15px;
+$base-color: #f8f8ed;
+$accent-light: #e1ddcf;
+$accent-dark: #2a324b;
+$dark-color: black;
+
+.garment img {
+    padding: 15px;
+}
+
+.button__area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button__closet {
+    width: 140px;
+    height: 40px;
+    color: #e1ddcf;
+    background-color: #2a324b;
+    border-radius: 4px;
+    border: 0;
 }

@@ -3,77 +3,77 @@
         {
             "id": 1,
             "typ": "top",
-            "url": "/jpg-clothes/top1.jpg"
+            "url": "/jpg-clothes/first_top.jpg"
         },
         {
             "id": 2,
             "typ": "top",
-            "url": "/jpg-clothes/top2.jpg"
+            "url": "/jpg-clothes/second_top.jpg"
         },
         {
             "id": 3,
             "typ": "top",
-            "url": "/jpg-clothes/top3.jpg"
+            "url": "/jpg-clothes/third_top.jpg"
         },
         {
             "id": 4,
             "typ": "top",
-            "url": "/jpg-clothes/top4.jpg"
+            "url": "/jpg-clothes/fourth_top.jpg"
         },
         {
             "id": 5,
             "typ": "top",
-            "url": "/jpg-clothes/top5.jpg"
+            "url": "/jpg-clothes/fifth_top.jpg"
         },
         {
             "id": 6,
             "typ": "bottom",
-            "url": "/jpg-clothes/bottom1.jpg"
+            "url": "/jpg-clothes/first_bottom.jpg"
         },
         {
             "id": 7,
             "typ": "bottom",
-            "url": "/jpg-clothes/bottom2.jpg"
+            "url": "/jpg-clothes/second_bottom.jpg"
         },
         {
             "id": 8,
             "typ": "bottom",
-            "url": "/jpg-clothes/bottom3.jpg"
+            "url": "/jpg-clothes/third_bottom.jpg"
         },
         {
             "id": 9,
             "typ": "bottom",
-            "url": "/jpg-clothes/bottom4.jpg"
+            "url": "/jpg-clothes/fourth_bottom.jpg"
         },
         {
             "id": 10,
             "typ": "bottom",
-            "url": "/jpg-clothes/bottom5.jpg"
+            "url": "/jpg-clothes/fifth_bottom.jpg"
         },
         {
             "id": 11,
             "typ": "shoe",
-            "url": "/jpg-clothes/shoe1.jpg"
+            "url": "/jpg-clothes/first_shoe.jpg"
         },
         {
             "id": 12,
             "typ": "shoe",
-            "url": "/jpg-clothes/shoe2.jpg"
+            "url": "/jpg-clothes/second_shoe.jpg"
         },
         {
             "id": 13,
             "typ": "shoe",
-            "url": "/jpg-clothes/shoe3.jpg"
+            "url": "/jpg-clothes/third_shoe.jpg"
         },
         {
             "id": 14,
             "typ": "shoe",
-            "url": "/jpg-clothes/shoe4.jpg"
+            "url": "/jpg-clothes/fourth_shoe.jpg"
         },
         {
             "id": 15,
             "typ": "shoe",
-            "url": "/jpg-clothes/shoe5.jpg"
+            "url": "/jpg-clothes/fifth_shoe.jpg"
         }
     ]
 }
