@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+// @import url(https://fonts.googleapis.com/css2?family=Secular+One&display=swap);
+
 
 $base-color: #f8f8ed;
 $accent-light: #e1ddcf;
@@ -82,7 +83,7 @@ $dark-color: black;
     transform: rotate(-405deg);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 460px) {
     .menu__button__container {
         display: flex;
     }

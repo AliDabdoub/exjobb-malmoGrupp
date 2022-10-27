@@ -1,3 +1,5 @@
+// @import url(https://fonts.googleapis.com/css2?family=Secular+One&display=swap);
+
 $base-color: #f8f8ed;
 $accent-light: #e1ddcf;
 $accent-dark: #2a324b;
@@ -17,8 +19,9 @@ $dark-color: black;
   justify-content: left;
 }
 .container {
-  padding: 40px;
-  padding-left: 40px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-top: 50px;
 }
 
 .main {
@@ -80,8 +83,8 @@ $dark-color: black;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family: 'Outfit', sans-serif;
+  text-transform: uppercase;
 }
 
 .grid {

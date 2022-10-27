@@ -3,6 +3,7 @@ $accent-light: #e1ddcf;
 $accent-dark: #2a324b;
 $dark-color: black;
 
+
 .closet {
     display: grid;
     width: 100%;
@@ -77,7 +78,7 @@ $dark-color: black;
 }
 .button:before{
     content: '';
-    border-bottom: 2px solid $accent-dark;
+    border-bottom: 3px solid $accent-dark;
     padding: 10px 10px;
     position: absolute;
     bottom: 0;
@@ -85,25 +86,24 @@ $dark-color: black;
     right: 0;
     margin: 0 auto;
     width: 0;
-    transition: 0.3s;
-}   
+    transition: 0.5s;
+} 
+
 .button:hover:before{
     width: 100%;
     padding: 0; // the other part of the trick
 }
 
-// click effect
-// .button:active{
-//     border-bottom: 20px solid $accent-dark;
-//     background: $accent-dark;
-//     color: $base-color;
-//     transition: none;
-// }
-
 .button:after{
-    border-bottom: 20px solid $accent-dark;
+    border-bottom: 30px solid $accent-dark;
     background: $accent-dark;
     color: $base-color;
     transition: none;
+    
+    button{
+        font-weight: bolder !important;
+        font-weight: bolder;
+        font-size: 3rem;
+    }
 }
 
