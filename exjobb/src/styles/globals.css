@@ -8,6 +8,7 @@ body {
   text-transform: uppercase;
   margin: 0;
   height: 100%;
+  width: 100%;
   background-color: #f8f8ed;
   color: #e1ddcf;
 }
@@ -35,6 +36,7 @@ img {
   align-items: center;
   justify-content: center;
 }
+
 .saveButton {
   width: 140px;
   height: 40px;
@@ -44,4 +46,5 @@ img {
   border: 0;
   transition: width height 2s;
 }
+
 
