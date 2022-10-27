@@ -17,13 +17,26 @@ $dark-color: black;
 .linkBelow {
   display: flex;
   justify-content: left;
+  width: 500px;
 }
 .container {
   margin: 0 auto;
   padding-left: 50px;
   padding-top: 50px;
 }
+.logo {
+  display: flex;
+  // justify-content: right;
+  // align-items: center;
+  padding-left: 0;
+  padding-bottom: 200px;
+  width: 400px;
+  height: 400px;
+}
 
+.img {
+float: right;
+}
 .main {
   min-height: 100vh;
   padding: 4rem 0;

@@ -5,8 +5,8 @@ import Link from "next/link";
 const Navbar = ()=> {
     return(
         <section className={styles.top__nav}>
-            <div>
-                Logo here
+            <div className={styles.meny__logo}>
+                <img src="logo.svg" width={"80px"} height={"80px"} ></img>
             </div>
 
             <input id={styles.menu__toggle} type="checkbox" />
