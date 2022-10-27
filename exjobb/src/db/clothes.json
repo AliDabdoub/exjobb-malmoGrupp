@@ -53,27 +53,27 @@
         {
             "id": 11,
             "typ": "shoe",
-            "url": "/jpg-clothes/shoe1.jpg"
+            "url": "/jpg-clothes/first_shoe.jpg"
         },
         {
             "id": 12,
             "typ": "shoe",
-            "url": "/jpg-clothes/shoe2.jpg"
+            "url": "/jpg-clothes/second_shoe.jpg"
         },
         {
             "id": 13,
             "typ": "shoe",
-            "url": "/jpg-clothes/shoe3.jpg"
+            "url": "/jpg-clothes/third_shoe.jpg"
         },
         {
             "id": 14,
             "typ": "shoe",
-            "url": "/jpg-clothes/shoe4.jpg"
+            "url": "/jpg-clothes/fourth_shoe.jpg"
         },
         {
             "id": 15,
             "typ": "shoe",
-            "url": "/jpg-clothes/shoe5.jpg"
+            "url": "/jpg-clothes/fifth_shoe.jpg"
         }
     ]
 }
