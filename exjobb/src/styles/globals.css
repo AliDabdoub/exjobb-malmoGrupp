@@ -45,9 +45,3 @@ img {
   transition: width height 2s;
 }
 
-.delete-btn {
-  padding: 2% 5%;
-  color: #e1ddcf;
-  background-color:#2a324b;
-  border-style: none;
-}
