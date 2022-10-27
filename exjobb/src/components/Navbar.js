@@ -1,12 +1,13 @@
-// const { StylesContext } = require("@material-ui/styles")
-import styles from "styles/Navbar.module.scss";
 import Link from "next/link";
+import styles from "styles/Navbar.module.scss";
 
-const Navbar = ()=> {
-    return(
+const Navbar = () => {
+    return (
         <section className={styles.top__nav}>
             <div className={styles.meny__logo}>
-                <Link href='/'><img src="Logo.svg" width={"80px"} height={"80px"} ></img></Link>
+                <Link href='/'>
+                    <img className={styles.logoImg} src="/brandLogo.svg" />
+                </Link>
             </div>
 
             <input id={styles.menu__toggle} type="checkbox" />

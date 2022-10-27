@@ -73,6 +73,14 @@ $dark-color: black;
     position: relative;
     transition: 0.3s;
     padding: 10px; // the trick
+
+    &.buttonActive:before {
+        width: 100%;
+        padding: 0.3px; 
+        border-bottom: 2px solid $accent-dark;
+        color: $base-color;
+        transition: none;
+    }
 }
 .button:before{
     content: '';

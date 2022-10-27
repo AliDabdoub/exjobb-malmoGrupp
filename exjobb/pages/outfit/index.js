@@ -25,10 +25,10 @@ function Outfit({ Component, pageProps }) {
   }, [])
 
   return (
-    <div>
+    <div >
       <Navbar />
 
-      <h1>Saved outfits</h1>
+      <h1 className={styles.div__outfits}>Saved outfits</h1>
 
       <div className={styles.outfits}>
         {outfits ? outfits.map((obj, i) => {
@@ -46,7 +46,7 @@ function Outfit({ Component, pageProps }) {
               <button className={styles.deleteBtn} onClick={removeItem(i)}>Remove</button>
             </div>
           )
-        }) : <div>
+        }) : <div className={styles.div__outfits}>
           No outfits saved
         </div>}
       </div>

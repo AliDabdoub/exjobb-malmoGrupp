@@ -19,6 +19,14 @@ $dark-color: black;
     padding: 1em;
 }
 
+.logoImg {
+    width: 80px;
+    height: 80px;
+    background-image: url(/brandLogo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .menu {
     display: flex;
     flex-direction: row;
