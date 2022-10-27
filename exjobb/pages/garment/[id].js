@@ -11,11 +11,14 @@ const CreatePage = (props) => {
     return (
         <div className={styles.garment}>
             <Navbar/>
-            <img src={garment.url} />
-            <div className={styles.button__area}>
-            <button className={styles.button__closet} onClick={() => router.back()}>
-                Back to Closet             
-            </button></div>
+            <div className={styles.garment__content}>
+                <img src={garment.url} />
+                <div className={styles.button__area}>
+                    <button className={styles.button__closet} onClick={() => router.back()}>
+                        Back to Closet             
+                    </button>
+                </div>
+            </div>
         </div>
     )
 };

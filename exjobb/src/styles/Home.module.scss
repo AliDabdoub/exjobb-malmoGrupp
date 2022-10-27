@@ -25,18 +25,13 @@ $dark-color: black;
   padding-top: 50px;
 }
 .logo {
-  display: flex;
-  // justify-content: right;
-  // align-items: center;
-  padding-left: 0;
-  padding-bottom: 200px;
+  justify-content: right;
   width: 400px;
   height: 400px;
+  margin-right:10%;
+  float: right;
 }
 
-.img {
-float: right;
-}
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -137,28 +132,17 @@ float: right;
   font-size: 1.25rem;
   line-height: 1.5;
 }
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
+  .logo {
+    justify-content: right;
+    width: 350px;
+    height: 350px;
+    margin-right:10%;
+    float: right;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
-}
