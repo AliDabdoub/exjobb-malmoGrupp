@@ -6,7 +6,7 @@ const Navbar = ()=> {
     return(
         <section className={styles.top__nav}>
             <div className={styles.meny__logo}>
-                <Link href='/'><img src="logo.svg" width={"80px"} height={"80px"} ></img></Link>
+                <Link href='/'><img src="Logo.svg" width={"80px"} height={"80px"} ></img></Link>
             </div>
 
             <input id={styles.menu__toggle} type="checkbox" />
