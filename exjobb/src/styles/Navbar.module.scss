@@ -11,11 +11,11 @@ $dark-color: black;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #00BAF0;
+    background-color: $base-color;
     background: linear-gradient(to left, $accent-light, $base-color);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: $accent-dark;
-    height: 50px;
+    height: 60px;
     padding: 1em;
 }
 
@@ -85,7 +85,7 @@ $dark-color: black;
 
 .meny__logo {
     align-items: center;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 @media (max-width: 460px) {
