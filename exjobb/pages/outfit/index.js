@@ -28,7 +28,7 @@ function Outfit({ Component, pageProps }) {
     <div>
       <Navbar />
 
-      <h1>Here are your outfits</h1>
+      <h1>Saved outfits</h1>
 
       <div className={styles.outfits}>
         {outfits ? outfits.map((obj, i) => {
