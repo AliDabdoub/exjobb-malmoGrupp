@@ -3,9 +3,21 @@ $accent-light: #e1ddcf;
 $accent-dark: #2a324b;
 $dark-color: black;
 
-.garment img {
-    padding: 50px;
-    margin:15px;
+.garment {
+    width: 100vw;
+    height: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.garment__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.garment__content img{
+    padding:15px;
 }
 
 .button__area {
@@ -15,6 +27,7 @@ $dark-color: black;
 }
 
 .button__closet {
+    margin:30px;
     width: 140px;
     height: 40px;
     color: #e1ddcf;
