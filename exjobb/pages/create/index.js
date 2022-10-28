@@ -33,7 +33,7 @@ const CreatePage = (props) => {
     const [buttonText, setButtonText] = useState(initialText);
   
     function handleClick() {
-      setButtonText('This outfit has been saved');
+      setButtonText('Saved!');
   
       setTimeout(() => {
         setButtonText(initialText);
