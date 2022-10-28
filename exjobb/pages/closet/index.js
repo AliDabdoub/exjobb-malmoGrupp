@@ -44,18 +44,6 @@ const Closet = ({ closet }) => {
                     </div>
                 ))}
             </div>
-
-            {/*
-            <div className={styles.closet}>
-                {closet.clothes.map(c => (
-                    <div className={styles.closet__image} key={closet.id}>
-                        <Link href={`/garment/${c.id}`}>
-                            <img src={c.url} />
-                        </Link>
-                    </div>
-                ))}
-            </div>
-                */}
         </div>
     )
 }
