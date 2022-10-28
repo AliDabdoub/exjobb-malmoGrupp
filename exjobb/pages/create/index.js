@@ -25,9 +25,6 @@ const CreatePage = (props) => {
 
     localStorage.setItem(STORAGE_KEY, JSON.stringify(savedOutfitList))
   }
-
-  console.log('DATA', data)
-
   
     const initialText = 'Save this outfit';
     const [buttonText, setButtonText] = useState(initialText);
@@ -56,18 +53,5 @@ const CreatePage = (props) => {
     </main>
   )
 };
-
-export async function getServerSideProps({ params }) {
-  return {
-    props: {
-      someProp: 'lala'
-    }
-  }
-}
-
-  
-
-
-
 
 export default CreatePage
