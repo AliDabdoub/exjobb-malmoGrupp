@@ -12,15 +12,3 @@ const ImageClick = ()=> {
     )
 }
 export default ImageClick
-
-
-/*
-const Closet = ()=> {
-    return(
-        <div>
-            
-        </div>
-    )
-}
-export default Closet
-*/
