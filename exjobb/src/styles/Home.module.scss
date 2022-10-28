@@ -1,4 +1,4 @@
-// @import url(https://fonts.googleapis.com/css2?family=Secular+One&display=swap);
+
 
 $base-color: #f8f8ed;
 $accent-light: #e1ddcf;
@@ -8,7 +8,7 @@ $dark-color: black;
 
 .linkUpper {
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
 .linkMittle {
   display: flex;
@@ -16,7 +16,7 @@ $dark-color: black;
 }
 .linkBelow {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   // width: 500px;
 }
 .container {
