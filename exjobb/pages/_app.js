@@ -8,10 +8,8 @@ function MyApp({ Component, pageProps }) {
       <title>Capsule Collective</title>
       <link rel="icon" href="/brandLogo.svg" />
     </Head>
-      
   <Component {...pageProps} />
   </>
-  
-}
 
+}
 export default MyApp

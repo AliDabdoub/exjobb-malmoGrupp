@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import EmblaCarousel from "components/EmblaCarousel/EmblaCarousel";
 import { mediaByTop, mediaByBottom, mediaByShoe } from "db";
-import emblaCarouselReact from "embla-carousel-react";
+// import emblaCarouselReact from "embla-carousel-react";
 import { STORAGE_KEY } from "constants";
 import Navbar from '../../src/components/Navbar'
-import styles from "styles/Embla.module.scss"
+// import styles from "styles/Embla.module.scss"
 
 
 const CreatePage = (props) => {
-   const [data, setData] = useState({})
-   
+  const [data, setData] = useState({})
+
   const handleSelect = (type) => (obj) => {
     setData(prev => {
       const newState = {...prev}
