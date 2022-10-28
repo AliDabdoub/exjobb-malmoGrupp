@@ -16,7 +16,7 @@ const parts = {
     All: '',
     Top: 'top',
     Bottom: 'bottom',
-    Shoe: 'shoe'
+    Shoes: 'shoes'
 }
 
 const Closet = ({ closet }) => {
@@ -27,16 +27,16 @@ const Closet = ({ closet }) => {
 
             <div className={styles.under__navbar}>
                 {Object.keys(parts).map((c, i) => (
-                    <button 
-                        className={`${styles.button} ${clothing === parts[c] ? styles.buttonActive : ''}`} 
-                        key={i} 
-                        onClick={()=>{setClothing(parts[c])}}
+                    <button
+                        className={`${styles.button} ${clothing === parts[c] ? styles.buttonActive : ''}`}
+                        key={i}
+                        onClick={() => { setClothing(parts[c]) }}
                     >{c}</button>
                 ))}
             </div>
 
             <div className={styles.closet}>
-                {closet.clothes.filter((f) => f.typ.includes(clothing)).map((c,i) => (
+                {closet.clothes.filter((f) => f.typ.includes(clothing)).map((c, i) => (
                     <div className={styles.closet__image} key={i}>
                         <Link href={`/garment/${c.id}`}>
                             <img src={c.url} />
@@ -44,18 +44,6 @@ const Closet = ({ closet }) => {
                     </div>
                 ))}
             </div>
-
-            {/*
-            <div className={styles.closet}>
-                {closet.clothes.map(c => (
-                    <div className={styles.closet__image} key={closet.id}>
-                        <Link href={`/garment/${c.id}`}>
-                            <img src={c.url} />
-                        </Link>
-                    </div>
-                ))}
-            </div>
-                */}
         </div>
     )
 }

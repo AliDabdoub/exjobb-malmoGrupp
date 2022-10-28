@@ -39,9 +39,6 @@ const CreatePage = (props) => {
         setButtonText(initialText);
       }, 3000);
     }
- 
-
-  
 
   return (
     <main>
